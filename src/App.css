@@ -1,0 +1,27 @@
+.App{
+    margin: 2% 10%;
+}
+.inputArea{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+.inputArea input{
+    padding: 0.75rem;
+    width:10rem;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+.btn{
+    padding: 1rem;
+    width: 3rem;
+    background-color: white;
+    color: black;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
+.msgArea{
+    margin-top: 1rem;
+}
