@@ -4,11 +4,12 @@ import Result from './Result';
 
 
 function App() {
-  let [num1,setNum1] = useState(0);
-  let [num2,setNum2] = useState(0);
+  let [num1,setNum1] = useState('');
+  let [num2,setNum2] = useState('');
   let [res,setRes] = useState(0);
   let [msg,setMsg] = useState('');
   let [flag,setFlag] = useState(false);
+
   function validation(e){
     let operand = e.target.value;
     console.log("num1 ",num1," num2 ",num2," operand ",operand);
@@ -37,7 +38,6 @@ function App() {
   }
 
   function calSum(fNum,sNum,operand){
-   setFlag(true);
     if(operand === '+'){
       setRes(fNum + sNum);
     }
@@ -50,6 +50,7 @@ function App() {
     else if(operand === '/'){
       setRes(fNum / sNum);
     }
+    setFlag(true);
     setMsg("Success : your result is shown above!");
   }
 
